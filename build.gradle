@@ -19,7 +19,7 @@ version = '20170221'
 publishing {
     publications {
         maven(MavenPublication) {
-            artifact 'libs/tls_sig_api.jar' // Publish a file created outside of the build
+            artifact 'libs/tls_sig_api_20170221.jar' // Publish a file created outside of the build
         }
     }
 }
