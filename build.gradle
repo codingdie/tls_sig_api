@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+repositories {
+    jcenter()
+    maven { url 'https://jitpack.io' }
+
+}
+
+dependencies {
+}
+
+jar {
+    baseName = 'tls_sig_api'
+}
+group = 'com.github.codingdie'
+version = '20170221'
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            artifact 'libs/tls_sig_api.jar' // Publish a file created outside of the build
+        }
+    }
+}
